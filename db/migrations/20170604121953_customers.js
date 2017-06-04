@@ -1,6 +1,7 @@
 exports.up = (knex => {
   return knex.schema.createTable('customers', (table) => {
     table.increments();
+    table.integer('user_id').notNullable();
     table.string('first_name').notNullable();
     table.string('last_name').notNullable();
     table.string('address_line1').notNullable();
