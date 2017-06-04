@@ -1,5 +1,5 @@
 exports.seed = function(knex) {
-  return knex('products').del();
+  return knex('products').del()
   .then(() => {
     return knex('products').insert([{
       id: 1,
@@ -98,6 +98,6 @@ exports.seed = function(knex) {
   .then(() => {
     return knex.raw(
       "SELECT setval('products_id_seq', (SELECT MAX(id) FROM products))"
-    );
+    )
   })
 }
