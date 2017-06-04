@@ -4,7 +4,7 @@ exports.seed = (knex) => {
   .then(() => {
     return knex('customers').insert([{
         id: 1,
-        user_id: 2
+        user_id: 2,
         first_name: 'Betty',
         last_name: 'Chempananical',
         address_line1: '111 Magical Lane',
@@ -16,7 +16,7 @@ exports.seed = (knex) => {
         email: 'bettymariam@gmail.com'
       }, {
         id: 2,
-        user_id: 3
+        user_id: 3,
         first_name: 'Erica',
         last_name: 'Rottman',
         address_line1: '222 Reality St',
@@ -28,7 +28,7 @@ exports.seed = (knex) => {
         email: 'erica@erica.com'
         }, {
         id: 3,
-        user_id: 4
+        user_id: 4,
         first_name: 'Amber',
         last_name: 'Murray',
         address_line1: '333 Sarcastic Ave',
