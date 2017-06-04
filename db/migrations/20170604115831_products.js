@@ -1,11 +1,14 @@
 exports.up = (knex => {
   return knex.schema.createTable('products', (table) => {
     table.increments();
-    table.string('name').notNullable();
     table.integer('category_id').notNullable();
-    table.decimal('price').notNullable();
-    table.text('description').notNullable();
+    table.integer('promotion_id').notNullable();
     table.integer('review_id').notNullable();
+    table.string('name').notNullable();
+    table.decimal('price').notNullable();
+    table.integer('quantity').notNullable();
+    table.text('description').notNullable();
+    table.text('image_url').notNullable();
     table.timestamps(true, true);
   });
 });
