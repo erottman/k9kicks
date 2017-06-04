@@ -1,8 +1,8 @@
 
 exports.seed = (knex) => {
-  return knex('orders_details').del()
+  return knex('order_details').del()
   .then(() => {
-    return knex('orders_details').insert([{
+    return knex('order_details').insert([{
       order_id: 1,
       product_id: 1,
       quantity: 1
@@ -24,9 +24,4 @@ exports.seed = (knex) => {
       quantity: 4
     }]);
   })
-  .then(() => {
-    return knex.raw(
-      "SELECT setval('orders_details_id_seq', (SELECT MAX(id) FROM orders_details));"
-    );
-  });
 };
