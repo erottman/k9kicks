@@ -6,22 +6,22 @@ exports.seed = (knex) => {
         id:1,
         username: 'admin',
         password: 'admin',
-        role: 'admin'
+        role_id: 1
       }, {
         id:2,
         username: 'betty',
         password: 'betty',
-        role: 'admin'
+        role_id: 2
       }, {
         id:3,
         username: 'erica',
         password: 'erica',
-        role: 'admin'
+        role_id: 2
       },{
         id:4,
         username: 'amber',
         password: 'amber',
-        role: 'admin'
+        role_id: 2
       }
     ]);
   })

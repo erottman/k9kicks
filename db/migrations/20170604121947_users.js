@@ -3,7 +3,7 @@ exports.up = (knex => {
     table.increments();
     table.string('username').notNullable();
     table.string('password').notNullable();
-    table.string('role').notNullable();
+    table.integer('role_id').notNullable();
     table.timestamps(true, true);
   });
 });
